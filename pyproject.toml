@@ -1,7 +1,7 @@
 [project]
 
 name = "pywalker"
-version = "0.1.1"
+version = "0.1.2"
 description = "A utility for discovering and importing Python modules in a package or directory."
 readme = "README.md"
 authors = [
@@ -27,4 +27,4 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [tool.hatch.build]
-packages = ["pywalker"]
+packages = ["src/pywalker"]
