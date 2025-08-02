@@ -2,7 +2,7 @@
 
 name = "pywalker"
 version = "0.1.0"
-description = "A utility for discovering and importing Python modules in a package or directory, with fnmatch pattern filtering."
+description = "A utility for discovering and importing Python modules in a package or directory."
 readme = "README.md"
 authors = [
     { name = "eyueldk" }

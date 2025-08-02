@@ -1,4 +1,4 @@
-name: Publish unboil-fastapi-auth
+name: Publish PyWalker
 on:
   push:
     branches:
