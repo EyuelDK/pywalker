@@ -16,7 +16,7 @@ def import_modules(
     Import all modules under the given root that match the given patterns.
     
     Args:
-        root: Path, str, or module to search for modules.
+        root: Path, str, or ModuleType to search for modules.
         patterns: fnmatch pattern or list of patterns to filter module names.
     """
     for module_name in walk_modules(root, patterns):
