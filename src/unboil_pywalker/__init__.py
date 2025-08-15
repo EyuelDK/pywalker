@@ -11,7 +11,7 @@ __all__ = [
 def import_modules(
     root: Path | str | ModuleType, 
     patterns: str | list[str] | None = None
-):
+) -> list[ModuleType]:
     """
     Import all modules under the given root that match the given patterns.
     
@@ -19,8 +19,11 @@ def import_modules(
         root: Path, str, or ModuleType to search for modules.
         patterns: fnmatch pattern or list of patterns to filter module names.
     """
-    for module_name in walk_modules(root, patterns):
+    return [        
         importlib.import_module(module_name)
+        for module_name in walk_modules(root, patterns)
+    ]
+
 
 
 def walk_modules(
